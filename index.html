@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Dream Journey</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+    .container {
+      animation: fadeIn 2s ease;
+    }
+    img {
+      max-width: 80%;
+      border-radius: 1.5rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #d63384;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 10px auto;
+    }
+    button {
+      background: #ff6f91;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      margin-top: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    button:hover {
+      background: #ff3f6c;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="chibi_love_scene.png" alt="You Are Mine Forever" />
+    <h1>You Are Mine Forever 💖</h1>
+    <p>Welcome, my baby Karishma. This is our dream journey, built from my heart for you.</p>
+    <button onclick="location.href='page2.html'">Start Dream Journey ➡️</button>
+  </div>
+</body>
+</html>
