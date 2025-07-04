@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page 4 – Dream Hug</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+      font-family: 'Georgia', serif;
+      text-align: center;
+      color: #b03060;
+      padding: 30px;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #d63384;
+    }
+
+    img {
+      width: 80%;
+      max-width: 480px;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(255, 192, 203, 0.4);
+      margin: 30px 0;
+    }
+
+    .message {
+      font-size: 20px;
+      margin: 20px auto;
+      padding: 0 15px;
+      line-height: 1.6;
+    }
+
+    .next-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 26px;
+      background-color: #ff5c8d;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+      transition: background 0.3s;
+    }
+
+    .next-btn:hover {
+      background-color: #d94a7a;
+    }
+
+    /* 🌸 Floating petals animation */
+    .petal {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url('https://i.imgur.com/Gt2YkJY.png'); /* You can replace this petal with your own */
+      background-size: cover;
+      animation: fall 10s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-50px) rotate(0deg); }
+      100% { transform: translateY(100vh) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💞 A Dream Where You Hug Me</h1>
+
+  <img src="hug_scene.png" alt="Ghibli Hug Image" />
+
+  <div class="message">
+    <p>Baby, I can see you in my dreams every day. 💫</p>
+    <p>You are my cutie 🥰</p>
+    <p>My beloved, stay with me because you have my heartbeats. 💋</p>
+  </div>
+
+  <a class="next-btn" href="page5.html">Next ➤</a>
+
+  <!-- Floating petals (optional) -->
+  <script>
+    for (let i = 0; i < 15; i++) {
+      const petal = document.createElement('div');
+      petal.classList.add('petal');
+      petal.style.left = `${Math.random() * 100}%`;
+      petal.style.animationDuration = `${6 + Math.random() * 6}s`;
+      document.body.appendChild(petal);
+    }
+  </script>
+
+</body>
+</html>
