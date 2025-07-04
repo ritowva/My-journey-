@@ -53,12 +53,11 @@
       background-color: #d94a7a;
     }
 
-    /* 🌸 Floating petals animation */
     .petal {
       position: absolute;
       width: 24px;
       height: 24px;
-      background-image: url('https://i.imgur.com/Gt2YkJY.png'); /* You can replace this petal with your own */
+      background-image: url('https://i.imgur.com/Gt2YkJY.png'); /* optional petal image */
       background-size: cover;
       animation: fall 10s linear infinite;
       opacity: 0.8;
@@ -72,6 +71,9 @@
 </head>
 <body>
 
+  <!-- Invisible iframe for music -->
+  <iframe src="music.html" allow="autoplay" style="display:none;"></iframe>
+
   <h1>💞 A Dream Where You Hug Me</h1>
 
   <img src="hug_scene.png" alt="Ghibli Hug Image" />
@@ -84,7 +86,7 @@
 
   <a class="next-btn" href="page5.html">Next ➤</a>
 
-  <!-- Floating petals (optional) -->
+  <!-- Floating petals animation -->
   <script>
     for (let i = 0; i < 15; i++) {
       const petal = document.createElement('div');
